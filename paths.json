@@ -1,16 +1,16 @@
 {
   "mappings": [
-    "/content/wknd-universal/language-masters/en:/",
-    "/content/wknd-universal/language-masters/en/:/en/",
-    "/content/wknd-universal/configuration:/.helix/config.json",
-    "/content/wknd-universal/metadata:/metadata.json",
-    "/content/wknd-universal/redirects:/redirects.json",
-    "/content/wknd-universal/placeholders:/placeholders.json",
-    "/content/wknd-universal.resource/language-masters/en/query-index.json:/en/query-index.json"
+    "/content/fundraising-stjude/language-masters/en:/",
+    "/content/fundraising-stjude/language-masters/en/:/en/",
+    "/content/fundraising-stjude/configuration:/.helix/config.json",
+    "/content/fundraising-stjude/metadata:/metadata.json",
+    "/content/fundraising-stjude/redirects:/redirects.json",
+    "/content/fundraising-stjude/placeholders:/placeholders.json",
+    "/content/fundraising-stjude.resource/language-masters/en/query-index.json:/en/query-index.json"
   ],
   "includes": [
-    "/content/wknd-universal/",
-    "/content/dam/wknd-universal/"
+    "/content/fundraising-stjude/",
+    "/content/dam/fundraising-stjude/"
   ]
 }
  
