@@ -1,16 +1,16 @@
 {
   "mappings": [
-    "/content/fundraising-stjude/language-masters/en:/",
-    "/content/fundraising-stjude/language-masters/en/:/en/",
-    "/content/fundraising-stjude/configuration:/.helix/config.json",
+    "/content/stjude/language-masters/en:/",
+    "/content/stjude/language-masters/en/:/en/",
+    "/content/stjude/configuration:/.helix/config.json",
     "/content/fundraising-stjude/metadata:/metadata.json",
     "/content/fundraising-stjude/redirects:/redirects.json",
     "/content/fundraising-stjude/placeholders:/placeholders.json",
     "/content/fundraising-stjude.resource/language-masters/en/query-index.json:/en/query-index.json"
   ],
   "includes": [
-    "/content/fundraising-stjude/",
-    "/content/dam/fundraising-stjude/"
+    "/content/stjude/",
+    "/content/dam/stjude/"
   ]
 }
  
