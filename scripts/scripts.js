@@ -32,7 +32,7 @@ import {
 
 /* AEM experimentation config */
 const experimentationConfig = {
-  prodHost: 'www.mysite.com', // change this to your production host
+  prodHost: 'www.stjude.org', // change this to your production host
   isProd: () => {
     const { hostname } = window.location;
     return hostname.includes('.mysite.com') || hostname.includes('aem.live'); // change this too
