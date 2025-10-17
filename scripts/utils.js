@@ -282,3 +282,13 @@ export function dynamicMediaAssetProcess(pictureElement, qParam) {
     });
   }
 }
+
+export function inUniversalEditor() {
+  if (window.self !== window.top && window.location.hostname.includes('adobeaemcloud.com')) {
+    return true;
+  }
+
+  if (window.location.hostname.includes('adobeaemcloud.com') && document.body.closest('html').className.includes('adobe-ue')) return true;
+
+  return false;
+}

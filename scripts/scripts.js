@@ -25,7 +25,23 @@ import {
   setPageLanguage,
   PATH_PREFIX,
 } from './utils.js';
+import {
+  loadExperimentationEager,
+  loadExperimentationLazy,
+} from './experiment-loader.js';
 
+/* AEM experimentation config */
+const experimentationConfig = {
+  prodHost: 'www.stjude.org', // change this to your production host
+  isProd: () => {
+    const { hostname } = window.location;
+    return hostname.includes('.mysite.com') || hostname.includes('aem.live'); // change this too
+  },
+  audiences: {
+    mobile: () => window.innerWidth < 770,
+    desktop: () => window.innerWidth >= 770,
+  },
+};
 
 /**
  * Moves all the attributes from a given elmenet to another given element.
@@ -217,6 +233,7 @@ async function renderWBDataLayer() {
  */
 async function loadEager(doc) {
   //setPageLanguage();
+  await loadExperimentationEager(doc, experimentationConfig);
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   renderWBDataLayer();
@@ -254,6 +271,7 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
+  await loadExperimentationLazy(doc, experimentationConfig);
 }
 
 
